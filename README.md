@@ -1,4 +1,4 @@
-#q2-pear
+# q2-pear
 
 This is a QIIME 2 plugin for joining paired end reads using the popular program PEAR by Zhang et al (see citation).  
 For more information on PEAR, see https://sco.h-its.org/exelixis/web/software/pear/.  
