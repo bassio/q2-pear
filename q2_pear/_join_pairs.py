@@ -8,7 +8,7 @@ from q2_types.per_sample_sequences import (SingleLanePerSamplePairedEndFastqDirF
             SingleLanePerSampleSingleEndFastqDirFmt,
             FastqManifestFormat, YamlFormat, FastqGzFormat)
 
-
+#source: q2-vsearch 
 def run_command(cmd, verbose=True):
     print("Running external command line application. This may print "
           "messages to stdout and/or stderr.")
@@ -19,7 +19,7 @@ def run_command(cmd, verbose=True):
     print(" ".join(cmd), end='\n\n')
     subprocess.run(cmd, check=True)
 
-
+#adapted with modification from q2-vsearch's join_pairs
 def join_pairs(
         demultiplexed_seqs: SingleLanePerSamplePairedEndFastqDirFmt,
         threads: int = 1
